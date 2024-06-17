@@ -263,6 +263,18 @@ docker run --gpus all -u $(id -u) -v /folder/of/your/data:/workspace/ -v /home/<
             ns-process-data video --data /workspace/video.mp4   # Smaple command of nerfstudio.
 ```
 
+### Run nerfstudio with docker-compose
+
+From the root directory run:
+
+`docker-compose -f .devcontainer/docker-compose.yml up`
+
+### OR 
+
+`cd .devcontainer/`
+
+`docker-compose up`
+
 ### Note
 
 - The container works on Linux and Windows, depending on your OS some additional setup steps might be required to provide access to your GPU inside containers.
